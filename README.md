@@ -160,119 +160,122 @@ https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/
 
 Keywords are predefined, reserved identifiers that have special meanings to the compiler.
 
-- abstract
-- as
-- base
-- bool
-- breakbyte
-- case
-- catch
-- char
-- checked
-- class
-- const
-- continue
-- decimal
-- default
-- delegate
-- do
-- double
-- else
-- enum
-- event
-- explicit
-- extern
-- false
-- finally
-- fixed
-- float
-- for
-- foreach
-- goto
-- if
-- implicit
-- in
-- int
-- interface
-- internal
-- is
-- lock
-- long
-- namespace
-- new
-- null
-- object
-- operator
-- out
-- override
-- params
-- private
-- protected
-- public
-- readonly
-- ref
-- return
-- sbyte
-- sealed
-- short
-- sizeof
-- stackalloc
-- static
-- string
-- struct
-- switch
-- this
-- throw
-- true
-- try
-- typeof
-- uint
-- ulong
-- unchecked
-- unsafe
-- ushort
-- using
-- virtual
-- void
-- volatile
-- while
+- abstract: Used to declare an abstract class or method that must be implemented in a derived class.
+- as: Used for type conversions that return null if the conversion isn't possible.
+- base: Used to access members of the base class from within a derived class.
+- bool: Defines a Boolean variable that can store true or false values.
+- break: Used to exit from a loop or switch statement.
+- byte: Defines an 8-bit unsigned integer.
+- case: Used in switch statements to define a specific case.
+- catch: Used in exception handling to catch and handle exceptions.
+- char: Defines a single Unicode character.
+- checked: Used to explicitly enable overflow checking for integer operations.
+- class: Used to declare a class.
+- const: Used to declare a constant field or local.
+- continue: Used to continue to the next iteration of a loop.
+- decimal: Defines a 128-bit precise decimal value.
+- default: Specifies the default case in a switch statement or provides a default value.
+- delegate: Used to declare a delegate type.
+- do: Used in combination with while to create a do-while loop.
+- double: Defines a double-precision floating-point number.
+- else: Used in if-else statements to specify the else block.
+- enum: Used to declare an enumeration type.
+- event: Used to declare an event in a publisher class.
+- explicit: Used to declare an explicit user-defined type conversion operator.
+- extern: Used to declare a method implemented externally.
+- false: Represents the boolean false value.
+- finally: Used in a try-catch block to specify code that always executes.
+- fixed: Used to prevent the garbage collector from relocating a movable variable.
+- float: Defines a single-precision floating-point number.
+- for: Used to create a for loop.
+- foreach: Used to create a foreach loop to iterate over collections.
+- goto: Used to transfer control to a labeled statement.
+- if: Used to create a conditional statement.
+- implicit: Used to declare an implicit user-defined type conversion operator.
+- in: Used in foreach statements and to specify generic type covariance.
+- int: Defines a 32-bit signed integer.
+- interface: Used to declare an interface.
+- internal: Specifies that a type or member is accessible only within its assembly.
+- is: Used to check if an object is compatible with a given type.
+- lock: Used to synchronize access to a block of code in multi-threaded programs.
+- long: Defines a 64-bit signed integer.
+- namespace: Used to declare a scope for organizing code elements.
+- new: Used to create objects or to hide inherited members.
+- null: Represents a null reference.
+- object: The ultimate base class of all other types.
+- operator: Used to define operator overloading.
+- out: Used for passing arguments by reference and to specify generic type contravariance.
+- override: Used to override a virtual or abstract method in a derived class.
+- params: Used to specify a parameter array.
+- private: Specifies that a member is accessible only within its class.
+- protected: Specifies that a member is accessible within its class and derived classes.
+- public: Specifies that a type or member is accessible from any code.
+- readonly: Specifies that a field can only be assigned in a constructor or at declaration.
+- ref: Used to pass arguments by reference.
+- return: Used to return from a method and specify its return value.
+- sbyte: Defines an 8-bit signed integer.
+- sealed: Used to prevent inheritance from a class.
+- short: Defines a 16-bit signed integer.
+- sizeof: Used to obtain the size in bytes of a type.
+- stackalloc: Used in unsafe code to allocate memory on the stack.
+- static: Used to declare a static member or static constructor.
+- string: Defines a string of Unicode characters.
+- struct: Used to declare a structure type.
+- switch: Used to create a switch statement.
+- this: Refers to the current instance of a class.
+- throw: Used to throw an exception.
+- true: Represents the boolean true value.
+- try: Used to define a try block in exception handling.
+- typeof: Used to obtain the System.Type object for a type.
+- uint: Defines a 32-bit unsigned integer.
+- ulong: Defines a 64-bit unsigned integer.
+- unchecked: Used to suppress overflow checking for integer operations.
+- unsafe: Used to declare an unsafe context, which allows pointers.
+- ushort: Defines a 16-bit unsigned integer.
+- using: Used to import namespaces or to define a dispose pattern.
+- virtual: Used to declare a method that can be overridden in derived classes.
+- void: Specifies that a method doesn't return a value.
+- volatile: Used to indicate that a field can be modified in the program by something external.
+- while: Used to create a while loop.
 
 ### Contextual Keywords
 
 A contextual keyword is used to provide a specific meaning in the code, but it is not a reserved word in C#. Some contextual keywords, such as partial and where, have special meanings in two or more contexts.
 
-- add
-- alias
-- ascending
-- async
-- await
-- by
-- descending
-- dynamic
-- equals
-- from
-- get
-- global
-- group
-- into
-- join
-- let
-- nameof
-- notnull
-- on
-- orderby
-- partial (method)
-- partial (type)
-- remove
-- select
-- set
-- unmanaged (generic type constraint)
-- value
-- var
-- when (filter condition)
-- where (generic type constraint)
-- where (query clause)
-- yield
+- add: Used in event accessor declarations to define a custom event accessor method for adding event handlers.
+- alias: Used in extern alias directives to create an alias for a namespace.
+- ascending: Used in LINQ queries to specify an ascending sort order.
+- async: Used to define an asynchronous method.
+- await: Used within async methods to asynchronously wait for a task to complete.
+- by: Used in LINQ queries as part of group clause to specify the key for grouping.
+- descending: Used in LINQ queries to specify a descending sort order.
+- dynamic: Used to declare a variable of type dynamic, which bypasses static type checking.
+- equals: Used to define a custom equality comparison method.
+- from: Used in LINQ queries to specify the data source and range variables.
+- get: Used in property declarations to define a getter accessor method.
+- global: Used to reference the global namespace, especially when there's a naming conflict.
+- group: Used in LINQ queries to group results based on a specified key.
+- into: Used in LINQ queries for continuation clauses after group or join operations.
+- join: Used in LINQ queries to join two data sources based on matching keys.
+- let: Used in LINQ queries to introduce a new range variable.
+- nameof: Used to obtain the string name of a variable, type, or member.
+- notnull: Used as a nullable reference type annotation to indicate that a reference is not supposed to be null.
+- on: Used in LINQ join clauses to specify the join condition.
+- orderby: Used in LINQ queries to sort the results.
+- partial (method): Used to define a partial method, which can be implemented in another partial class definition.
+- partial (type): Used to split the definition of a class, struct, or interface across multiple files.
+- remove: Used in event accessor declarations to define a custom event accessor method for removing event handlers.
+- select: Used in LINQ queries to specify the shape or type of returned elements.
+- set: Used in property declarations to define a setter accessor method.
+- unmanaged (generic type constraint): Used as a constraint in generic type declarations to specify that the type parameter must be an unmanaged type.
+- value: Used in property setter declarations to represent the value being assigned.
+- var: Used for implicitly typed local variables, allowing the compiler to infer the type.
+- when (filter condition): Used in catch clauses to specify a condition for when the catch block should be executed.
+- when: Used in switch expressions to specify a case guard.
+- where (generic type constraint): Used in generic type declarations to specify constraints on type parameters.
+- where (query clause): Used in LINQ queries to filter results based on a condition.
+- yield return: Used in iterator methods to return each element one at a time.
+- yield break: Used in iterator methods to indicate that the iteration is complete.
 
 **Learn More:**
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/
